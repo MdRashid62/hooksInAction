@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'hooksInAction';
+  private number: number = 12345;
+
+  get counter(){
+    return this.number;
+  }
+  set counter(value){
+    this.number = value;
+  }
+
+  increment() {
+    this.counter++;
+  }
+  decrement() {
+    this.counter--;
+  }
+
 }
