@@ -24,8 +24,9 @@ export class ChildComponent implements OnInit, OnChanges {
     console.log('Current Value - (ng on changes)', newNumberChange.currentValue);
     this.myNewNumber = newNumberChange.currentValue;
   }
-
+  //ngOnInit lifecycle hook
   ngOnInit(): void {
+    console.log('ngOnInit value', this.myNewNumber);
   }
 
 }
