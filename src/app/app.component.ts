@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   private number: number = 12345;
   name: string = "Muhammad";
+  isVisible: boolean = true;
 
   user = {
     name: "Muhammad"
+  }
+
+  switchVisibility () {
+    this.isVisible = !this.isVisible;
   }
 
   updateValue() {

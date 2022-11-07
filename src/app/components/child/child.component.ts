@@ -54,4 +54,11 @@ export class ChildComponent implements OnInit, OnChanges, DoCheck {
   ngAfterViewChecked () {
     console.log("This was executed after ngAfterViewInit");
   }
+
+  // ngOnDestroy
+  // this lifecycle hook is used when our component is going to get destroyed
+  // we can use this particular lifecycle hook when we need to unsubscribe OR when we need to destroy all the content from the page of that particular component
+  ngOnDestroy () {
+    console.log("component has been destroyed");
+  }
 }

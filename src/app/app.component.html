@@ -4,9 +4,10 @@
   </h1>
   <div>
     <button (click)="decrement()">Subtract</button>
-    <app-child [myNewNumber] = "counter" [myNumber2] = "user"></app-child>
-    <button (click)="increment()">Addition</button><br>
-    <a (click)="updateValue()">Update</a>
+    <app-child *ngIf = "isVisible" [myNewNumber] = "counter" [myNumber2] = "user"></app-child>
+    <button (click)="increment()">Addition</button><br><br>
+    <button><a (click)="updateValue()">Update</a></button><br><br>
+    <button (click)="switchVisibility()">Show/Hide</button>
 
   </div>
 </div>
