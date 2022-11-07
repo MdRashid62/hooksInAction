@@ -45,4 +45,9 @@ export class ChildComponent implements OnInit, OnChanges, DoCheck {
     console.log("This was executed after ngAfterContentInit");
   }
 
+  //ngAfterViewInit
+  ngAfterViewInit () {
+    console.log("This was executed after ngAfterContentChecked");
+  }
+
 }
