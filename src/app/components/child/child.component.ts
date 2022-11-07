@@ -62,3 +62,4 @@ export class ChildComponent implements OnInit, OnChanges, DoCheck {
     console.log("component has been destroyed");
   }
 }
+//test
