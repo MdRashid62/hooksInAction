@@ -1,13 +1,13 @@
 <div style="text-align: center;">
-  <h1>
-    My App
+  <h1 style="color: #DD0031;">
+    Angular Lifecycle Hooks In Action
   </h1>
   <div>
-    <button (click)="decrement()">Subtract</button>
+    <button style="color: #5100ff;" (click)="decrement()">Subtract</button>
     <app-child *ngIf = "isVisible" [myNewNumber] = "counter" [myNumber2] = "user"></app-child>
-    <button (click)="increment()">Addition</button><br><br>
-    <button><a (click)="updateValue()">Update</a></button><br><br>
-    <button (click)="switchVisibility()">Show/Hide</button>
+    <button style="color: #4fd217;" (click)="increment()">Addition</button><br><br>
+    <button style="color: #4fd217;"><a (click)="updateValue()">Update</a></button><br><br>
+    <button style="color: red;" (click)="switchVisibility()">Show/Hide</button>
 
   </div>
 </div>
