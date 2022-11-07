@@ -14,9 +14,7 @@ export class AppComponent {
   }
 
   updateValue() {
-    this.user = {
-      name: "Rashid"
-    }
+    this.user.name = "Rashid"
   }
 
   get counter(){

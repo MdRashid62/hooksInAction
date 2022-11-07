@@ -20,7 +20,6 @@ export class ChildComponent implements OnInit, OnChanges, DoCheck {
   }
   //ngOnchanges lifecycle hook
   ngOnChanges(changes: SimpleChanges): void {
-    debugger;
     const newNumberChange: SimpleChange = changes.myNewNumber;
     console.log('Previous Value - (ng on changes)', newNumberChange.previousValue);
     console.log('Current Value - (ng on changes)', newNumberChange.currentValue);
@@ -34,6 +33,11 @@ export class ChildComponent implements OnInit, OnChanges, DoCheck {
   //ngDoCheck
   ngDoCheck(): void {
     console.log(this.myNumber2)
+  }
+
+  //ngAfterContentInit
+  ngAfterContentInit () {
+    console.log("yayyyyyyyyyyyyyyyyyy")
   }
 
 }
