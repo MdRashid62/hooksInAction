@@ -4,8 +4,9 @@
   </h1>
   <div>
     <button (click)="decrement()">Subtract</button>
-    <app-child [myNewNumber] = "counter" [myNumber2] = "name"></app-child>
-    <button (click)="increment()">Addition</button>
+    <app-child [myNewNumber] = "counter" [myNumber2] = "user"></app-child>
+    <button (click)="increment()">Addition</button><br>
+    <a (click)="updateValue()">Update</a>
 
   </div>
 </div>

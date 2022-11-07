@@ -7,7 +7,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   private number: number = 12345;
-  name: string = "John Doe";
+  name: string = "Muhammad";
+
+  user = {
+    name: "Muhammad"
+  }
+
+  updateValue() {
+    this.user = {
+      name: "Rashid"
+    }
+  }
 
   get counter(){
     return this.number;
